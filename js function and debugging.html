@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+
+        // 1. function call
+
+       function greet(){
+        document.write("Hello Students","<br>");
+       }
+       greet();
+
+    //  2.function name error
+
+        function welcome(){
+            document.write("Welcome to java","<br>");
+        }
+
+        welcome();
+
+        // 3.missing parantheses
+
+        function message(){
+            document.write("Good Moring","<br>");
+        }
+
+        message();
+
+        //4. argument error
+        function a(a,b){
+            document.write(a+b,"<br>");
+        }
+        a(10,5);
+
+        // 5.wrong argument
+            function Student(name,age){
+                document.writeln("Name:"+" ",name,"<br>");
+                document.writeln("Age:",age,"<br>");
+            }
+
+            Student("praveen",21);
+
+            //6.variable name error
+
+                function aad(a,b){
+                    let result = a+b;
+                    document.write("Result:",result,"<br>");
+                }
+
+                aad(15,10);
+
+                // 7.missing parameter value
+
+                function multiply(a,b){
+                    let result = a*b;
+                    document.write("multiply:",result,"<br>");
+                }
+
+                multiply(5,5); 
+
+                // 8.retrun value not stored
+
+                function ad(a,b){
+                    return a+b;
+                }
+                ad(10,15);
+                let result = ad(10,10)
+                document.write(result ,"<br>");
+
+                // 9.worng retrun 
+
+                function getname(){
+                    return name;
+                }
+                let name = "praveen";
+                document.write(getname() ,"<br>");
+
+                // 10.missing retrun
+
+                    function aa(a,b){
+                    let result = a+b;
+                    return result;
+                    }
+
+                    let x = aa(10,20);
+                    document.write(x,"<br>");
+
+                    //  11.Return Statement Error
+
+                    function square(num){
+                     let nu = num*num;
+                        return nu;
+                        
+                    }
+                   
+                    document.write(square(5),"<br>");
+
+                    // 12. String Concatenation
+
+                    function fullName(firstName, lastName){
+                        return firstName+" "+lastName;
+                    }
+                    document.write(fullName("praveen","praveen"),"<br>")
+
+                    // 13. Function Call Argument Error
+
+                    function calculate(a,b){
+                        return a+b;
+                    }
+                    let resul = calculate(10,10);
+                    document.write(resul,"<br>");  
+
+                    // 14. Local Variable Scope
+
+                    function demo(){
+                        let messag = "hello";
+                        document.write(messag,"<br>");
+                    }
+                    demo();
+
+                    // 15. Wrong Function Name
+
+                    function display() { 
+                        document.write("JavaScript Functions","<br>");
+                     } 
+                     
+                     display();
+
+                    //  16. Multiple Parameters
+
+                    function Student(name, course, duration){
+                        document.writeln("name:",name,"<br>");
+                        document.writeln("course:",course,"<br>");
+                        document.writeln("duration:",duration,"<br>");
+                    }
+
+                    Student("praveen","java devop","1 month")
+
+                    // 17. Calculation Error
+
+                    function average(a,b){
+                        return (a+b)/2;
+                    }
+            
+                    document.writeln(average(6,6),"<br>");
+
+                    // 18. Conditional Return 
+                    function checkAge(age) { 
+                        if (age <= 18) {
+                         return age;
+                         } else{
+                            return "not eligible"
+                         }
+                    }
+                     document.write(checkAge(15));
+                     
+                    //  19. Function Reuse 
+                    function add(a, b) {
+                         return a+b;
+                         } 
+                         let result1 = add(10, 20);
+                         let result2 = add(30, 40);
+                         document.writeln(result1,"<br>");
+                         document.writeln(result2,"<br>");
+                         document.writeln(result1+result2,"<br>")
+
+                        //  20. Complete Function Debugging 
+                        function calculateTotal(price, quantity) { 
+                        let total = price * quantity;
+                         return total;
+                        } 
+                         let price = 100; 
+                         let quantity = 5;
+                         let results = calculateTotal(price,quantity);
+                         document.writeln("Total:", results);
+        
+    </script>
+</body>
+</html>
