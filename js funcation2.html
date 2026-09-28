@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <center>
+    <a href="#" onclick="greet()"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </center>
+    <button onclick="greet()">click me</button>
+
+    <script>
+        function greet(){
+            alert("hello World")
+        }
+    </script>
+    <br><br>
+    <!-- 7.event value -->
+     <select onchange="showCourse(this.value)">
+        <option value="python">python</option>
+        <option value="Java">Java</option>
+     </select>
+     <script>
+        function showCourse(course){
+            document.write(course);
+            alert("course changed")
+        }
+     </script>
+     <br><br>
+
+     <!-- 8.input value -->
+      <input type="text" onchange="showValue(this.value)">
+      <script>
+        function showValue(value){
+            document.write(value)
+        }
+      </script>
+      <br><br>
+      
+      <!-- 9.onmouseenter funcation call -->
+       <div onmouseenter="mouseEnter()" >
+        move mouse Here
+       </div>
+
+       <script>
+        function mouseEnter(){
+            document.write("mouse Enter");
+        }
+       </script>
+       <br><br>
+
+       <!-- 10.onmouseenter:funcation name -->
+        <h2 onmouseenter="enterText()">Move Mouse</h2>
+        <script>
+            function enterText(){
+                console.log("Mouse Entered")
+            }
+        </script>
+
+        <!-- 11.onmouseout:funcation call -->
+         <p onmouseenter="mouseOut()">
+            move Mouse out
+         </p>
+         <script>
+            function mouseOut(){
+                console.log("Mouse Out")
+            }
+         </script>
+
+         <!-- 12.onmouseout:variable error -->
+          <div onmouseout="hideMessage()">Mouse Area</div>
+          <script>
+            function hideMessage(){
+                let message ="mouse left";
+                console.log(message);
+            }
+          </script>
+
+          <!--13.onkeyreleased funaction name  -->
+          <input type="text" onkeyup="keyUp()">
+          <script>
+            function keyUp(){
+                console.log("key Released")
+            }
+          </script>
+          <br><br>
+
+          <!--14.onkeyup value  -->
+          <input type="text" onkeyup="showText(this.value)">
+          <script>
+            function showText(text){
+                console.log(text);
+            }  
+          </script>
+          <br><br>
+          
+          <!-- 15.onkeydown funaction call -->
+          <input type="text" onkeydown="keyDown()">
+          <script>
+            function keyDown(){
+                console.log("Key Press Down");
+            }
+          </script>
+          <br><br>
+
+          <!-- 16.onkeydown argument -->
+           <input type="text" onkeydown="checkKey(this.value)">
+           <script>
+            function checkKey(event){
+                console.log(event);
+            }
+           </script><br><br>
+
+           <!-- 17.onkeypress funaction name -->
+            <input type="text" onkeypress="keyPress()">
+            <script>
+                function keyPress(){
+                    console.log("Key Press");
+                }
+            </script><br><br>
+
+            <!--18.onkeypress variable error -->
+            <input type="text" onkeypress="showKey(this.value)">
+            <script>
+                function showKey(e){
+                    console.log(e);
+                }
+            </script><br><br>
+            <!-- 19.multiple event -->
+             <input type="text" onkeydown="keyDown()" onkeyup="keyUp()">
+             <script>
+                function keyDown(){
+                    console.log("Key Down");
+                }
+                function keyUp(){
+                    console.log("Key Up");
+                }
+             </script><br><br>
+
+             <!-- 20.funcation + multiple event -->
+              <input type="text" onchange="inputChange(this.value)" onkeyup="inputKey(this.value)" onkeydown="inputDown(this.value)" onkeypress="inputPress(this.value)">
+              <script>
+                function inputChange(value){
+                    console.log(value)
+                }
+                function inputKey(text){
+                    console.log(text)
+                }
+                 function inputDown(va){
+                 console.log(va)
+                  }
+                 function inputPress(val){
+                  console.log(val)
+                 }
+              </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
