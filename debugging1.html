@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1.onclick funcation call -->
+    <button onclick="greet()">Click Me</button>
+    <script>
+        function greet(){
+            alert("Hello!","<br>");
+        }
+        
+     </script>
+     <br><br>
+
+         <!--2. funcation name -->
+          <button onclick="welcome()">Click Me</button>
+          <script>
+            function welcome(){
+                alert("welcome java script")
+            }
+
+          </script>
+
+          <br><br>
+
+          <!--3. argument -->
+           <button onclick="addNumber(10,10)">Add</button>
+           <script>
+            function addNumber(a,b){
+                document.writeln(a*b);
+            } 
+           </script>
+            <br><br>
+
+            <!-- 4.retrun vALUE -->
+             <button onclick="showResult()">Reset</button>
+             <script>
+                function calculate(){
+                    return 10 + 20;
+                }
+                function showResult(){
+                    let result = calculate();
+                    document.writeln(result);
+                }
+
+             </script>
+             <br><br>
+
+             <!-- 5.on click var name -->
+              <button onclick="displayName()">Name</button>
+              <script>
+                function displayName(){
+                    let name="praveen";
+                    alert("Hi Praveen")
+                }
+              </script>
+             <br><br>
+             
+             <!-- 6.funcation name -->
+                 <select onchange="changeCourse()">
+                    <option>Python</option>
+                    <option>Java</option>
+                </select>
+
+                <script>
+                function changeCourse(){
+                    alert("Course Changed");
+                }
+                </script>
+                <br><br>
+
+                <!-- 7.event value -->
+                    <select onchange="showCourse(this.value)">
+                        <option value="Python">Java</option>
+                        <option value="Java">Python</option>
+                    </select>
+
+                    <script>
+                    function showCourse(course) {
+                        document.write(course);
+                    }
+                    </script>
+                    <br><br>
+
+                    <!-- 8.onchange: Input Value -->
+                     <input type="text" onchange="showValue(this.value)">
+
+                            <script>
+                            function showValue(value){
+                                document.write(value);
+                            }
+                            </script>
+                            <br><br>
+
+                            <!--9.onmouseenter: Function Call -->
+                            <div onmouseenter="mouseEnter()">
+                                    Move Mouse Here
+                             </div>
+
+                                <script>
+                                function mouseEnter(){
+                                    console.log("Mouse Entered");
+                                }
+                                </script>
+
+
+
+
+    
+</body>
+</html>
